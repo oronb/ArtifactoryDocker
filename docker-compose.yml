@@ -2,24 +2,6 @@ version: '2'
 
 services:
 
-        jenkins:
-
-                image: jenkins
-
-                container_name: jenkins
-
-                ports:
-
-                        - "8080:8080"
-
-                        - "50000:50000"
-
-                restart: always
-
-                volumes:
-
-                        - ./FOR_JENKINS:/var/jenkins_home
-
         artifactory:
 
                 image: docker.bintray.io/jfrog/artifactory-oss:5.5.1
